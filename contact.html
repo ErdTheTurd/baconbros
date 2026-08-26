@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Bacon Bros LLC for land acquisition, management, and sales in Horizon, Texas.">
+  <title>Contact | Bacon Bros LLC</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <span class="logo-mark">Bacon Bros</span>
+        <span class="logo-sub">Land Management</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/contact.html" class="nav-cta">Inquire</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero--contact">
+      <div class="container">
+        <p class="hero-eyebrow">Get in Touch</p>
+        <h1>Tell us about your land.</h1>
+        <p class="page-hero-lead">
+          Whether you are looking to buy, sell, or need ongoing management,
+          we respond to every inquiry personally.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2>Reach Bacon Bros</h2>
+          <p>
+            Use the form to describe your property or inquiry. Include as much detail
+            as you can — acreage, location, and what you are hoping to accomplish —
+            and we will follow up promptly.
+          </p>
+          <ul class="contact-details">
+            <li>
+              <strong>Service Area</strong>
+              <span>Horizon, Texas &amp; El Paso County</span>
+            </li>
+            <li>
+              <strong>Inquiries</strong>
+              <span>Land acquisition, management, and sales</span>
+            </li>
+            <li>
+              <strong>Ownership</strong>
+              <span>
+                <a href="https://johndunnmd.com" target="_blank" rel="noopener noreferrer">johndunnmd.com</a>
+                &nbsp;·&nbsp;
+                <a href="https://epspine.com" target="_blank" rel="noopener noreferrer">epspine.com</a>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <!-- Replace YOUR_FORM_ID with your Formspree form ID after signup at formspree.io -->
+          <div id="form-success" class="form-success" role="status">
+            Thank you for reaching out. We received your message and will respond shortly.
+          </div>
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="New inquiry from Bacon Bros website">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel">
+              </div>
+              <div class="form-group">
+                <label for="inquiry-type">Inquiry Type</label>
+                <select id="inquiry-type" name="inquiry_type" required>
+                  <option value="">Select one</option>
+                  <option value="buy">I want to buy land</option>
+                  <option value="sell">I want to sell land</option>
+                  <option value="manage">I need land management</option>
+                  <option value="general">General question</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="property-location">Property Location (if applicable)</label>
+              <input type="text" id="property-location" name="property_location" placeholder="e.g., Horizon, TX — near FM 1281">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Tell us about your property, acreage, timeline, and any questions you have."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-dark">Send Message</button>
+            <p class="form-note">Your information is sent securely via Formspree. We do not share your details with third parties.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-mark">Bacon Bros LLC</div>
+          <p>Land acquisition, management, and sales serving Horizon, Texas and the surrounding El Paso region.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-label="Owner links">
+          <h4>Ownership</h4>
+          <ul>
+            <li><a href="https://johndunnmd.com" target="_blank" rel="noopener noreferrer">johndunnmd.com</a></li>
+            <li><a href="https://epspine.com" target="_blank" rel="noopener noreferrer">epspine.com</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Bacon Bros LLC. All rights reserved.</span>
+        <span>Horizon, Texas</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
