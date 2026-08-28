@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 912 1136" role="img" aria-label="Sale map 305 N Kenazo - 2 and 3 acres">
+  <rect width="912" height="1136" fill="#faf7f2"/>
+
+  <!-- Tax lot reference (faint) -->
+  <image href="IMG_6486.PNG" x="0" y="0" width="912" height="1136" opacity="0.18"/>
+
+  <!-- Surrounding lots -->
+  <g fill="none" stroke="#c8c0b8" stroke-width="1.5">
+    <rect x="80" y="120" width="70" height="55"/><rect x="155" y="120" width="70" height="55"/>
+    <rect x="230" y="120" width="70" height="55"/><rect x="305" y="120" width="70" height="55"/>
+    <rect x="380" y="120" width="70" height="55"/><rect x="455" y="120" width="70" height="55"/>
+    <rect x="530" y="120" width="70" height="55"/>
+    <path d="M 120 860 Q 280 940 440 860" />
+    <rect x="80" y="880" width="40" height="70" transform="rotate(-15 100 915)"/>
+    <rect x="185" y="910" width="40" height="70"/><rect x="245" y="910" width="40" height="70"/>
+    <rect x="305" y="900" width="40" height="70" transform="rotate(5 325 935)"/>
+    <rect x="360" y="880" width="40" height="70" transform="rotate(15 380 915)"/>
+    <!-- L-shaped lot north of sale parcels -->
+    <polygon points="155,300 695,340 695,358 155,358"/>
+    <polygon points="155,358 400,358 400,430 155,430"/>
+    <!-- Lot below 3ac -->
+    <polygon points="155,698 732,698 732,820 155,820"/>
+  </g>
+
+  <!-- N Kenazo Ave -->
+  <path d="M 780 80 L 860 200 L 820 1050 L 740 980 Z" fill="#e8e4dc" stroke="#b8b0a8" stroke-width="2"/>
+  <text x="800" y="560" font-family="Work Sans, Arial, sans-serif" font-size="22" fill="#6b635a" transform="rotate(72 800 560)">N Kenazo Ave</text>
+
+  <!-- Kenazo Medical Center -->
+  <polygon points="155,200 695,260 695,300 155,260" fill="#fff" stroke="#c8c0b8" stroke-width="2"/>
+  <text x="300" y="245" font-family="Georgia, serif" font-size="28" font-weight="600" fill="#2a2622">Kenazo Medical Center</text>
+
+  <!-- Parcel 1: 2 acres  stepped boundary on east per tax lot -->
+  <polygon
+    points="155,358 695,388 722,548 595,548 595,525 155,525"
+    fill="rgba(66,133,244,0.35)" stroke="#1a56db" stroke-width="3"/>
+  <text x="300" y="455" font-family="Georgia, serif" font-size="26" font-weight="600" fill="#1a3a6b">For Sale - 2 acres</text>
+
+  <!-- Parcel 2: 3 acres -->
+  <polygon
+    points="155,525 595,525 595,548 722,548 732,698 155,698"
+    fill="rgba(66,133,244,0.35)" stroke="#1a56db" stroke-width="3"/>
+  <text x="300" y="620" font-family="Georgia, serif" font-size="26" font-weight="600" fill="#1a3a6b">For Sale - 3 acres</text>
+
+  <text x="660" y="470" font-family="Work Sans, Arial, sans-serif" font-size="14" font-weight="600" fill="#9c4a2e">305 N Kenazo</text>
+</svg>
