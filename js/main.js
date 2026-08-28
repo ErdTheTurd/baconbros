@@ -31,6 +31,14 @@
 
   var contactForm = document.getElementById('contact-form');
   if (contactForm) {
+    var parcelSelect = document.getElementById('parcel');
+    if (parcelSelect) {
+      var params = new URLSearchParams(window.location.search);
+      var parcelParam = params.get('parcel');
+      if (parcelParam === 'one') parcelSelect.value = 'parcel-one';
+      if (parcelParam === 'two') parcelSelect.value = 'parcel-two';
+    }
+
     contactForm.addEventListener('submit', function (event) {
       var successEl = document.getElementById('form-success');
       if (successEl) {
