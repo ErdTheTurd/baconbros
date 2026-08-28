@@ -1,90 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg class="site-plan-svg" viewBox="0 0 912 1136" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="site-plan-title site-plan-desc">
-  <title id="site-plan-title">Site plan  305 N Kenazo Ave</title>
-  <desc id="site-plan-desc">Two parcels for sale totaling five acres along N Kenazo Avenue, adjacent to Kenazo Medical Center. Parcel boundaries traced from tax lot map.</desc>
+  <title id="site-plan-title">Site plan — 305 N Kenazo Ave</title>
+  <desc id="site-plan-desc">Two parcels for sale: 2 acres and 3 acres along N Kenazo Avenue. Boundaries match county tax lot map with stepped shared boundary.</desc>
 
-  <!-- Background -->
   <rect width="912" height="1136" fill="#faf7f2"/>
 
-  <!-- Surrounding subdivision lots (west) -->
   <g fill="none" stroke="#c8c0b8" stroke-width="1.5">
-    <rect x="40" y="720" width="55" height="90" rx="1"/>
-    <rect x="100" y="720" width="55" height="90" rx="1"/>
-    <rect x="160" y="720" width="55" height="90" rx="1"/>
-    <rect x="220" y="720" width="55" height="90" rx="1"/>
-    <rect x="280" y="720" width="55" height="90" rx="1"/>
-    <rect x="340" y="720" width="55" height="90" rx="1"/>
-    <rect x="400" y="720" width="55" height="90" rx="1"/>
-    <rect x="460" y="720" width="55" height="90" rx="1"/>
-    <rect x="520" y="720" width="55" height="90" rx="1"/>
-    <!-- Cul-de-sac curve -->
-    <path d="M 120 860 Q 280 940 440 860" fill="none" stroke="#c8c0b8" stroke-width="2"/>
-    <rect x="80" y="880" width="40" height="70" transform="rotate(-15 100 915)"/>
-    <rect x="130" y="900" width="40" height="70" transform="rotate(-5 150 935)"/>
-    <rect x="185" y="910" width="40" height="70"/>
-    <rect x="245" y="910" width="40" height="70"/>
-    <rect x="305" y="900" width="40" height="70" transform="rotate(5 325 935)"/>
-    <rect x="360" y="880" width="40" height="70" transform="rotate(15 380 915)"/>
-    <!-- North small lots -->
-    <rect x="80" y="120" width="70" height="55"/>
-    <rect x="155" y="120" width="70" height="55"/>
-    <rect x="230" y="120" width="70" height="55"/>
-    <rect x="305" y="120" width="70" height="55"/>
-    <rect x="380" y="120" width="70" height="55"/>
-    <rect x="455" y="120" width="70" height="55"/>
+    <rect x="80" y="120" width="70" height="55"/><rect x="155" y="120" width="70" height="55"/>
+    <rect x="230" y="120" width="70" height="55"/><rect x="305" y="120" width="70" height="55"/>
+    <rect x="380" y="120" width="70" height="55"/><rect x="455" y="120" width="70" height="55"/>
     <rect x="530" y="120" width="70" height="55"/>
+    <path d="M 120 860 Q 280 940 440 860"/>
+    <polygon points="155,300 695,340 695,358 155,358"/>
+    <polygon points="155,358 400,358 400,430 155,430"/>
+    <polygon points="155,698 732,698 732,820 155,820"/>
   </g>
 
-  <!-- N Kenazo Ave -->
   <path d="M 780 80 L 860 200 L 820 1050 L 740 980 Z" fill="#e8e4dc" stroke="#b8b0a8" stroke-width="2"/>
   <text x="800" y="560" font-family="Work Sans, sans-serif" font-size="22" font-weight="500" fill="#6b635a" transform="rotate(72 800 560)">N Kenazo Ave</text>
-  <!-- Road arrows -->
-  <polygon points="810,300 820,320 800,320" fill="#9a928a"/>
-  <polygon points="770,780 760,760 780,760" fill="#9a928a"/>
 
-  <!-- Kenazo Medical Center (north) -->
-  <polygon points="100,200 740,280 740,340 100,300" fill="#ffffff" stroke="#c8c0b8" stroke-width="2"/>
-  <text x="320" y="265" font-family="Cormorant Garamond, Georgia, serif" font-size="28" font-weight="600" fill="#2a2622">Kenazo Medical Center</text>
+  <polygon points="155,200 695,260 695,300 155,260" fill="#ffffff" stroke="#c8c0b8" stroke-width="2"/>
+  <text x="300" y="245" font-family="Cormorant Garamond, Georgia, serif" font-size="28" font-weight="600" fill="#2a2622">Kenazo Medical Center</text>
 
-  <!-- Parcel One  2 acres (north parcel, tax-lot boundaries) -->
-  <polygon
-    points="
-      100,340
-      740,400
-      740,500
-      620,500
-      620,470
-      100,470
-    "
-    fill="rgba(66, 133, 244, 0.32)"
-    stroke="#1a56db"
-    stroke-width="3"
-  />
-  <text x="280" y="430" font-family="Cormorant Garamond, Georgia, serif" font-size="26" font-weight="600" fill="#1a3a6b">For Sale  2 acres</text>
+  <polygon points="155,358 695,388 722,548 595,548 595,525 155,525" fill="rgba(66,133,244,0.35)" stroke="#1a56db" stroke-width="3"/>
+  <text x="300" y="455" font-family="Cormorant Garamond, Georgia, serif" font-size="26" font-weight="600" fill="#1a3a6b">For Sale - 2 acres</text>
 
-  <!-- Parcel Two  3 acres (south parcel, stepped shared boundary) -->
-  <polygon
-    points="
-      100,470
-      620,470
-      620,500
-      740,500
-      740,700
-      100,700
-    "
-    fill="rgba(66, 133, 244, 0.32)"
-    stroke="#1a56db"
-    stroke-width="3"
-  />
-  <text x="280" y="600" font-family="Cormorant Garamond, Georgia, serif" font-size="26" font-weight="600" fill="#1a3a6b">For Sale  3 acres</text>
+  <polygon points="155,525 595,525 595,548 722,548 732,698 155,698" fill="rgba(66,133,244,0.35)" stroke="#1a56db" stroke-width="3"/>
+  <text x="300" y="620" font-family="Cormorant Garamond, Georgia, serif" font-size="26" font-weight="600" fill="#1a3a6b">For Sale - 3 acres</text>
 
-  <!-- Lot below (not for sale) -->
-  <polygon points="100,700 740,700 740,820 100,820" fill="#ffffff" stroke="#c8c0b8" stroke-width="1.5"/>
-
-  <!-- Address pin -->
-  <g transform="translate(760, 420)">
-    <circle cx="0" cy="0" r="14" fill="#9c4a2e"/>
-    <circle cx="0" cy="0" r="6" fill="#ffffff"/>
-  </g>
-  <text x="620" y="450" font-family="Work Sans, sans-serif" font-size="14" font-weight="600" fill="#9c4a2e">305 N Kenazo</text>
+  <text x="660" y="470" font-family="Work Sans, sans-serif" font-size="14" font-weight="600" fill="#9c4a2e">305 N Kenazo</text>
 </svg>
