@@ -182,13 +182,138 @@ p + p {
 
 .hero {
   position: relative;
-  min-height: 88vh;
-  display: flex;
-  align-items: center;
   padding-top: var(--header-height);
+  background: var(--color-cream);
   overflow: hidden;
 }
 
+.hero-map-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 3rem;
+  align-items: center;
+  padding-block: 3rem 4rem;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: none;
+  color: var(--color-charcoal);
+  padding-block: 0;
+}
+
+.hero-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-rust);
+  margin-bottom: 1.25rem;
+}
+
+.hero h1 {
+  color: var(--color-charcoal);
+  margin-bottom: 1rem;
+}
+
+.hero-lead {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-stone);
+  margin-bottom: 1.25rem;
+}
+
+.hero-address {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  margin-bottom: 1.5rem;
+}
+
+.hero-parcel-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.hero-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius);
+  background: rgba(66, 133, 244, 0.15);
+  color: #1a56db;
+  border: 1px solid rgba(26, 86, 219, 0.25);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.hero-map-feature {
+  position: relative;
+  background: var(--color-white);
+  border: 1px solid rgba(42, 38, 34, 0.1);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.hero-map-clickable {
+  position: relative;
+  display: block;
+  width: 100%;
+  cursor: zoom-in;
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: zoom-in;
+}
+
+.hero-map-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem 1.25rem;
+  background: var(--color-white);
+  border-top: 1px solid rgba(42, 38, 34, 0.08);
+}
+
+.hero-map-label {
+  width: 100%;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-stone);
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 900px) {
+  .hero-map-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-block: 2rem 3rem;
+  }
+
+  .hero-map-feature {
+    order: -1;
+  }
+}
+
+/* Legacy hero bg (inner pages) */
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -580,13 +705,22 @@ section {
   }
 }
 
-/* ---- Asset downloads ---- */
+/* ---- Featured downloads (homepage) ---- */
 
-.asset-downloads {
-  margin-top: 3.5rem;
-  padding-top: 3rem;
-  border-top: 1px solid rgba(42, 38, 34, 0.1);
+.featured-downloads {
+  padding-block: 0 4rem;
+  background: var(--color-cream);
+  margin-top: -1rem;
 }
+
+.featured-downloads .asset-grid {
+  margin-top: 0;
+}
+
+.featured-downloads .section-header {
+  margin-bottom: 1.5rem;
+}
+
 
 .asset-downloads-header {
   display: flex;
