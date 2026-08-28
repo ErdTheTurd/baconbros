@@ -18,6 +18,7 @@
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#downloads">Maps</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="contact.html" class="nav-cta">Inquire</a></li>
@@ -113,7 +114,78 @@
                 <span><strong>Parcel Two — 3 acres</strong>South parcel with stepped shared boundary. Contiguous with Parcel One.</span>
               </li>
             </ul>
-            <a href="#map" class="btn btn-dark">View on Map</a>
+            <div class="asset-actions-bar">
+              <button type="button" class="btn btn-dark btn-sm" data-copy-text="305 N Kenazo Ave, Horizon City, TX 79928">Copy Address</button>
+              <a href="#downloads" class="btn btn-ghost btn-sm">Download Maps</a>
+            </div>
+            <a href="#map" class="btn btn-dark site-plan-cta">View on Map</a>
+          </div>
+        </div>
+
+        <div class="asset-downloads" id="downloads">
+          <div class="asset-downloads-header">
+            <div>
+              <h3>Maps &amp; documents</h3>
+              <p>Download, copy, or share the site plan and reference maps. Use these files for due diligence, lender packages, or sharing with partners.</p>
+            </div>
+            <div class="asset-actions-bar">
+              <button type="button" class="btn btn-dark btn-sm" data-copy-all-links="#asset-link-list">Copy All Links</button>
+            </div>
+          </div>
+
+          <div class="asset-grid" id="asset-link-list">
+            <article class="asset-card">
+              <div class="asset-preview">
+                <img src="assets/site-plan.svg" alt="Site plan with parcel boundaries" loading="lazy">
+                <button type="button" class="asset-preview-btn" data-lightbox="assets/site-plan.svg" data-lightbox-caption="Site plan — 2 &amp; 3 acre parcels" aria-label="View site plan full size"></button>
+              </div>
+              <div class="asset-body" data-asset-url="assets/site-plan.svg" data-asset-label="Site Plan (SVG)">
+                <span class="asset-type">SVG · Scalable</span>
+                <h4>Site Plan</h4>
+                <p>Parcel boundaries with blue highlights, traced from the tax lot map. Best for web, print, and design work.</p>
+                <div class="asset-toolbar">
+                  <a href="assets/site-plan.svg" download="bacon-bros-site-plan.svg" class="btn btn-dark btn-sm">Download</a>
+                  <button type="button" class="btn btn-ghost btn-sm" data-copy-url="assets/site-plan.svg">Copy Link</button>
+                  <button type="button" class="btn btn-ghost btn-sm" data-lightbox="assets/site-plan.svg" data-lightbox-caption="Site plan — 2 &amp; 3 acre parcels">Full Size</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="asset-card">
+              <div class="asset-preview">
+                <img src="assets/IMG_6486.PNG" alt="Sale map with blue parcel highlights" loading="lazy">
+                <button type="button" class="asset-preview-btn" data-lightbox="assets/IMG_6486.PNG" data-lightbox-caption="Sale map — 2 &amp; 3 acres for sale" aria-label="View sale map full size"></button>
+              </div>
+              <div class="asset-body" data-asset-url="assets/IMG_6486.PNG" data-asset-label="Sale Map (PNG)">
+                <span class="asset-type">PNG · High resolution</span>
+                <h4>Sale Map</h4>
+                <p>Marketing site plan with blue highlights showing 2-acre and 3-acre parcels for sale along N Kenazo Ave.</p>
+                <div class="asset-toolbar">
+                  <a href="assets/IMG_6486.PNG" download="bacon-bros-sale-map.png" class="btn btn-dark btn-sm">Download</a>
+                  <button type="button" class="btn btn-ghost btn-sm" data-copy-url="assets/IMG_6486.PNG">Copy Link</button>
+                  <button type="button" class="btn btn-ghost btn-sm" data-copy-image="assets/IMG_6486.PNG">Copy Image</button>
+                  <button type="button" class="btn btn-ghost btn-sm" data-lightbox="assets/IMG_6486.PNG" data-lightbox-caption="Sale map — 2 &amp; 3 acres for sale">Full Size</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="asset-card">
+              <div class="asset-preview">
+                <img src="assets/IMG_6487.PNG" alt="County tax lot reference map" loading="lazy">
+                <button type="button" class="asset-preview-btn" data-lightbox="assets/IMG_6487.PNG" data-lightbox-caption="Tax lot reference map" aria-label="View tax lot map full size"></button>
+              </div>
+              <div class="asset-body" data-asset-url="assets/IMG_6487.PNG" data-asset-label="Tax Lot Map (PNG)">
+                <span class="asset-type">PNG · Reference</span>
+                <h4>Tax Lot Map</h4>
+                <p>County parcel lines along N Kenazo Ave. Source reference used for the site plan boundary geometry.</p>
+                <div class="asset-toolbar">
+                  <a href="assets/IMG_6487.PNG" download="bacon-bros-tax-lot-map.png" class="btn btn-dark btn-sm">Download</a>
+                  <button type="button" class="btn btn-ghost btn-sm" data-copy-url="assets/IMG_6487.PNG">Copy Link</button>
+                  <button type="button" class="btn btn-ghost btn-sm" data-copy-image="assets/IMG_6487.PNG">Copy Image</button>
+                  <button type="button" class="btn btn-ghost btn-sm" data-lightbox="assets/IMG_6487.PNG" data-lightbox-caption="Tax lot reference map">Full Size</button>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </div>
@@ -226,6 +298,7 @@
           <h4>Navigate</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#downloads">Maps</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -245,8 +318,17 @@
     </div>
   </footer>
 
+  <div id="asset-lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Full size map preview">
+    <div class="lightbox-inner">
+      <button type="button" class="lightbox-close" aria-label="Close preview">Close</button>
+      <img class="lightbox-image" src="" alt="">
+      <p class="lightbox-caption"></p>
+    </div>
+  </div>
+
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/downloads.js"></script>
   <script src="js/maps.js"></script>
 </body>
 </html>

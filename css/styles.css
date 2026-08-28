@@ -525,6 +525,10 @@ section {
   margin-bottom: 0.15rem;
 }
 
+.site-plan-cta {
+  margin-top: 1rem;
+}
+
 /* ---- Map ---- */
 
 .map-section {
@@ -572,6 +576,222 @@ section {
 
 @media (max-width: 900px) {
   .site-plan-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- Asset downloads ---- */
+
+.asset-downloads {
+  margin-top: 3.5rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(42, 38, 34, 0.1);
+}
+
+.asset-downloads-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.asset-downloads-header h3 {
+  margin-bottom: 0.35rem;
+}
+
+.asset-downloads-header p {
+  color: var(--color-stone);
+  font-size: 0.95rem;
+  max-width: 520px;
+}
+
+.asset-actions-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.asset-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.asset-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+  border: 1px solid rgba(42, 38, 34, 0.08);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.asset-preview {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  background: var(--color-cream);
+  border-bottom: 1px solid rgba(42, 38, 34, 0.06);
+  overflow: hidden;
+}
+
+.asset-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.75rem;
+}
+
+.asset-preview-btn {
+  position: absolute;
+  inset: 0;
+  border: none;
+  background: rgba(42, 38, 34, 0);
+  cursor: zoom-in;
+  transition: background 0.2s ease;
+}
+
+.asset-preview-btn:hover {
+  background: rgba(42, 38, 34, 0.06);
+}
+
+.asset-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.25rem;
+}
+
+.asset-type {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-rust);
+  margin-bottom: 0.35rem;
+}
+
+.asset-body h4 {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.asset-body p {
+  color: var(--color-stone);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.asset-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.btn-sm {
+  padding: 0.5rem 0.85rem;
+  font-size: 0.72rem;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-stone);
+  border-color: rgba(42, 38, 34, 0.15);
+}
+
+.btn-ghost:hover {
+  background: var(--color-cream);
+  color: var(--color-charcoal);
+  border-color: rgba(42, 38, 34, 0.25);
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(42, 38, 34, 0.88);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.lightbox.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-inner {
+  position: relative;
+  max-width: min(96vw, 900px);
+  max-height: 92vh;
+}
+
+.lightbox-image {
+  display: block;
+  max-width: 100%;
+  max-height: calc(92vh - 3rem);
+  margin: 0 auto;
+  border-radius: var(--radius);
+  background: var(--color-white);
+}
+
+.lightbox-caption {
+  margin-top: 0.75rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.copy-toast {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(12px);
+  z-index: 300;
+  padding: 0.75rem 1.25rem;
+  background: var(--color-charcoal);
+  color: var(--color-white);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+
+.copy-toast.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+@media (max-width: 900px) {
+  .asset-grid {
     grid-template-columns: 1fr;
   }
 }
