@@ -3,7 +3,7 @@
   <rect width="912" height="1136" fill="#faf7f2"/>
 
   <!-- Tax lot reference (faint) -->
-  <image href="IMG_6487.PNG" x="0" y="0" width="912" height="1136" opacity="0.18"/>
+  <image href="IMG_6486.PNG" x="0" y="0" width="912" height="1136" opacity="0.18"/>
 
   <!-- Surrounding lots -->
   <g fill="none" stroke="#c8c0b8" stroke-width="1.5">
